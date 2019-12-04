@@ -1,7 +1,7 @@
 <html>
   <head>
   <link rel="shortcut icon" href="ladda ned (3).png" />
-
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <style type="text/css">
   	body {
   		background-image: url("ladda ned (13).jpg");
@@ -31,11 +31,41 @@
 
 
   	}
+  	div {
+  		width: 50px;
+  		height: 50px;
+  		padding: 0px 100px;
+  		cursor: pointer;
+  	}
+
+  	#hover-element {
+  		display: none;
+  		position: absolute;
+  		background-color: white;
+  		padding: 10px;
+  		border-radius: 2px;
+  	}
+
+  	#hover-div:hover #hover-element {
+  		display: block;
+  		display: inline;
+  	}
+
+  	#hover-div:hover {
+  		
+  	}
 
   </style>
     <body>
 	    <h1>SuperiorMC Map</h1>
-	    
+	    <div id="hover-div">
+	    	<i class="fa fa-exclamation-circle" style="font-size: 50px; color: rgb(255, 100, 100); text-shadow: black 2px 2px 5px;"></i>
+	    	<span id="hover-element"> 
+	    		Not loading? click this icon <img src="allow.png"> and allow. If it is still not working contact staff
+	    	</span>
+
+
+		</div>
       <iframe src="http://51.91.61.57:11605/" width="1550px" height="800px">
   			<p>Your browser does not support iframes.</p>
 		</iframe> 
