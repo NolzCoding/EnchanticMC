@@ -4,10 +4,7 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <style type="text/css">
   	body {
-  		background-image: url("ladda ned (13).jpg");
-  		background-size: 2500px;
-  		background-position: 100%;
-  		margin: 0;
+  		margin: 0px;
   	}
 
   	iframe {
@@ -20,7 +17,7 @@
 
   	}
 
-  	h1 {
+  	h1.titleboi {
   		font-family: "Comic Sans MS", cursive, sans-serif;
   		font-size: 100px;
   		text-align: center;
@@ -31,46 +28,69 @@
 
 
   	}
-  	div {
-  		width: 50px;
-  		height: 50px;
-  		padding: 0px 100px;
-  		cursor: pointer;
-  	}
-
-  	#hover-element {
-  		display: none;
-  		position: absolute;
-  		background-color: white;
-  		padding: 10px;
-  		border-radius: 2px;
-  	}
-
-  	#hover-div:hover #hover-element {
-  		display: block;
-  		display: inline;
-  	}
-
-  	#hover-div:hover {
+  	#relDiv {
+  		position: relative;
+  		left: -50%;
+  		width: 500px;
+  		height: 600px;
+  		background-color: rgba(255,255,255, 0.9);
+  		border-radius: 20px;
   		
   	}
-  	#texting {
-  		padding: 0px;
-  		margin: 0px 0px;
+  	h1.note {
+  		color: rgb(150, 150, 255);
+  		font-family: "Comic Sans MS", cursive, sans-serif;
+  		font-size: 50px;
+  		text-align: center;
+  		padding: 20px 100px;
   	}
+  	#paraNote {
+  		font-size: 25px;
+  		padding: 20px;
+  		text-align: center;
+  	}
+  	button {
+  		border-radius: 10px;
+  		font-size: 30px;
+  		background-color: rgb(100, 100, 255);
+  		color: white;
+  		padding: 10px 30px;
+  		margin: 50px 175px;
+  		border-style: none;
+  		text-align: center;
+  		transition: 0.1s background-color ;
+  	}
+  	button:hover {
+  		background-color: rgb(150, 150, 255);
+  	}
+
+ 
 
 
   </style>
+
+
+  	<script type="text/javascript">
+  		
+  		function removeDummy() {
+    		var elem = document.getElementById('removeDiv');
+    		elem.parentNode.removeChild(elem);
+    		return false;
+		}
+  	</script>
+
+  	
+
     <body>
-	    <h1>SuperiorMC Map</h1>
-	    <div id="hover-div">
-	    	<p id="texting" style="font-size: 100px; color: rgb(255, 100, 100); text-shadow: black 2px 2px 5px;">!</p>
-	    	<span id="hover-element"> 
-	    		Not loading? click this icon <img src="allow.png"> and allow. If it is still not working contact staff
-	    	</span>
-
-
-		</div>
+	    <h1 class="titleboi">SuperiorMC Map</h1>
+	    <div id="removeDiv" style="position: absolute; left: 50%;">
+    	<div id='relDiv'>
+    		<h1 class="note">Note</h1>
+    		<p class="class" id="paraNote"> You have to click this icon <img src="allow.png"> if you are on google chrome in order to load the map! <p>
+    		<button onclick="removeDummy()" class="click">Okay</button>
+    	</div>
+    	</div>
+		
       <iframe src="http://51.91.61.57:11605/" width="1550px" height="800px">
   			<p>Your browser does not support iframes.</p>
 		</iframe> 
