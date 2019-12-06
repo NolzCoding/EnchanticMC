@@ -1,99 +1,75 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  <link rel="shortcut icon" href="ladda ned (3).png" />
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<head>
+  <title>SuperiorMC</title>
+  <link rel="shortcut icon" href="superiorlogo2.png" />
+
   <style type="text/css">
-  	body {
-  		margin: 0px;
-  	}
+    body {
+      margin: 0px;
+    }
+    li.menu {
+      list-style-type: none;
+      background-color: orange;
+      padding: 19px;
+      box-shadow: #FF6619  0px 5px; 
+    }
 
-  	iframe {
-  		border-style: flat;
-  		border-radius: 20px;
-  		border-width: 10px;
-  		border-color: purple;
-  		margin: 100px;
+    #logo {
+      padding: 0px
+    }
+    a.menu2 {
+      color: white;
+      font-size: 50px;
+      text-underline-position: left;
+      text-decoration: unset;
+      padding: 20px 50px;
+      transform-style: border-radius background-color;
+      transition-duration: 0.2s;
+      text-decoration-color: #662200;
+      border-radius: 30px;
+    }
+    a.menu2:hover {
+      text-decoration-color: #662200;
+      background-color: #FF6619;
+      cursor: pointer;
+      border-radius: 5px;
+    }
 
-
-  	}
-
-  	h1.titleboi {
-  		font-family: "Comic Sans MS", cursive, sans-serif;
-  		font-size: 100px;
-  		text-align: center;
-  		color: purple;
-  		background-color: rgba(255,200,255,0.7);
-  		box-shadow: rgb(225, 150, 225) 0px 8px 0px;
-  		text-shadow: white 0px 0px 5px;
-
-
-  	}
-  	#relDiv {
-  		position: relative;
-  		left: -50%;
-  		width: 500px;
-  		height: 600px;
-  		background-color: rgba(255,255,255, 0.9);
-  		border-radius: 20px;
-  		
-  	}
-  	h1.note {
-  		color: rgb(150, 150, 255);
-  		font-family: "Comic Sans MS", cursive, sans-serif;
-  		font-size: 50px;
-  		text-align: center;
-  		padding: 20px 100px;
-  	}
-  	#paraNote {
-  		font-size: 25px;
-  		padding: 20px;
-  		text-align: center;
-  	}
-  	button {
-  		border-radius: 10px;
-  		font-size: 30px;
-  		background-color: rgb(100, 100, 255);
-  		color: white;
-  		padding: 10px 30px;
-  		margin: 50px 175px;
-  		border-style: none;
-  		text-align: center;
-  		transition: 0.1s background-color ;
-  	}
-  	button:hover {
-  		background-color: rgb(150, 150, 255);
-  	}
-
- 
-
+    a.current {
+      background-color: #FF6619;
+      color: white;
+      font-size: 50px;
+      text-underline-position: left;
+      text-decoration: unset;
+      padding: 20px 50px;
+      transform-style: border-radius background-color;
+      transition-duration: 0.2s;
+      text-decoration-color: #FF884D;
+      border-radius: 10px;
+    }
+    a.current:hover {
+      
+      text-decoration-color: #662200;
+      background-color: #FF6619;
+      cursor: pointer;
+      border-radius: 5px;
+      
+    }
 
   </style>
 
 
-  	<script type="text/javascript">
-  		
-  		function removeDummy() {
-    		var elem = document.getElementById('removeDiv');
-    		elem.parentNode.removeChild(elem);
-    		return false;
-		}
-  	</script>
+</head>
+<body>
 
-  	
+  <li class="menu">
+    <img id="logo" src="superiorlogo2.png" height="47px" width="50px">
+    <a href="" class="current">Home</a>
+    <a href="map.html" class="menu2">Map</a>
+    <a href="https://storesuperiormc.tebex.io/" class="menu2">Store</a>
 
-    <body>
-	    <h1 class="titleboi">SuperiorMC Map</h1>
-	    <div id="removeDiv" style="position: absolute; left: 50%;">
-    	<div id='relDiv'>
-    		<h1 class="note">Note</h1>
-    		<p class="class" id="paraNote"> You have to click this icon <img src="allow.png"> if you are on google chrome in order to load the map! <p>
-    		<button onclick="removeDummy()" class="click">Okay</button>
-    	</div>
-    	</div>
-		
-      <iframe src="http://51.91.61.57:11605/" width="1550px" height="800px">
-  			<p>Your browser does not support iframes.</p>
-		</iframe> 
-    </body>
-  </head>
+  </li>
+
+</body>
 </html>
